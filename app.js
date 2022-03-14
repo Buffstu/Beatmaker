@@ -25,7 +25,7 @@ class DrumKit {
     const activeBars = document.querySelectorAll(`.b${step}`);
     //Loop over the pads
     activeBars.forEach(bar => {
-      bar.style.animation = `playTrack 0.3s alternate ease-in-out 2`;
+      bar.style.animation = `playTrack 0.1s alternate ease-in-out 2`;
       if (bar.classList.contains("active")) {
         if (bar.classList.contains("kick-pad")) {
           this.kickAudio.currentTime = 0;
